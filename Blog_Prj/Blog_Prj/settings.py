@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'Blog_App',
     'django.contrib.sites',
     'disqus',
+    'django_forms_bootstrap',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -113,5 +114,9 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR,"static"),)
 
+DISQUS_API_KEY = '2iBJjSs0FvN7i9DVeUbjq11TYm20Stnn32gsxBBd3VcpPQo6gJjtipJl3hYPk99N'
 DISQUS_WEBSITE_SHORTNAME = 'myBlog'
 SITE_ID = 1
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
